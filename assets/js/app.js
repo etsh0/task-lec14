@@ -47,7 +47,15 @@ let filtered = myFilter (array , function(x) {
 console.log(filtered);
 
 // Problem 13: Palindrome Checker 
-
+function isPalindrome (str) {
+    if (str.length === 0 ) return true 
+    let lower = str.toLowerCase(); 
+    let reversed = lower.split("").reverse().join("") // split << بتقسّم النص لحروف منفصلة في مصفوفة
+    // reverse >> بتقلب ترتيب العناصر في المصفوفة
+    // join << بتجمع عناصر المصفوفة في string من جديد
+    return lower === reversed ;
+}
+console.log(isPalindrome("racecar"));
 
 // Problem 14: FizzBuzz Array 
 
